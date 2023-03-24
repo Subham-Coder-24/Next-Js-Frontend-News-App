@@ -7,8 +7,6 @@ export const fetchHeadlines = async (country = "in") => {
     const { data } = await axios.get(
       `https://newsapi.org/v2/top-headlines?country=in&apiKey=491b303018674684b254966f0b246be9`
     );
-
-    // console.log(data);
     return data;
   } catch (error) {
     console.log(error);

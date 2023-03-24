@@ -35,7 +35,7 @@ const BigPost = ({ item }) => {
           <div className="flex sm:hidden">
             {" "}
             <p className="text-gray-500 text-sm">
-              {news[x]?.description.slice(0, 100)}
+              {news[x]?.description}
             </p>
           </div>
         </div>

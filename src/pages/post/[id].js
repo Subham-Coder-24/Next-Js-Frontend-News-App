@@ -14,15 +14,16 @@ const Single = (props) => {
   // console.log(arr[0]);
   // console.log(arr[0].title.slice(0,5).toLowerCase());
 
-  var item;
-  for (var i = 0; i <= 20; i++) {
-    // if(arr[i].title==null)continue;
-    if (!arr[i].title) continue;
-    if (arr[i].title.slice(0, 5).toLowerCase() == id) {
-      item = arr[i];
-      break;
-    }
-  }
+  // var item;
+  // for (var i = 0; i <= 20; i++) {
+  //   // if(arr[i].title==null)continue;
+  //   if (!arr[i].title) continue;
+  //   if (arr[i].title.slice(0, 5).toLowerCase() == id) {
+  //     item = arr[i];
+  //     break;
+  //   }
+  // }
+  var item = arr.find(article => article.title.slice(0, 5).toLowerCase() === id);
 
   return (
     <div className="flex items-center justify-center mx-20 font-poppins">

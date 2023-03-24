@@ -8,10 +8,9 @@ import Categorybar from "@/components/Categorybar";
 export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
-    <NextNProgress />
-    <Header/>
-    <Categorybar/>
-
+      <NextNProgress />
+      <Header />
+      <Categorybar />
       <Component {...pageProps} />
     </Provider>
   );
